@@ -1,0 +1,53 @@
+{
+  "name": "lnd-web-individual-new",
+  "version": "1.0.0",
+  "description": "Lessondesk Individual for web",
+  "main": "index.js",
+  "repository": "https://tiaanduplessis@bitbucket.org/fullfacingsoftware/lnd-web-individual-new.git",
+  "author": "Full Facing",
+  "private": true,
+  "scripts": {
+    "start": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html",
+    "lint:js": "standard --fix src",
+    "lint:css": "stylelint --fix stylelint \"src/**/*.css\"",
+    "lint": "yarn lint:js && yarn lint:css"
+  },
+  "dependencies": {
+    "@reach/router": "^1.1.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "classnames": "^2.2.6",
+    "components": "^0.1.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-progressbar.js": "^0.2.0"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "husky": "^1.0.0-rc.13",
+    "parcel-bundler": "^1.9.7",
+    "parcel-plugin-asset-copier": "^1.0.0",
+    "parcel-plugin-bundle-visualiser": "^1.1.2",
+    "parcel-plugin-imagemin": "^1.1.2",
+    "parcel-plugin-sw-precache": "^0.5.2",
+    "postcss-modules": "^1.3.2",
+    "standard": "^11.0.1",
+    "stylelint": "^9.4.0",
+    "stylelint-config-recommended": "^2.1.0"
+  },
+  "assetsPath": "src/static",
+  "standard": {
+    "parser": "babel-eslint",
+    "env": {
+      "browser": true,
+      "jest": true
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint"
+    }
+  }
+}

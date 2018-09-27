@@ -1,0 +1,17 @@
+html {
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans,
+    Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding-top: 50px;
+    background-color: cornsilk
+}
+
+main {
+    height: 100%;
+}
+
