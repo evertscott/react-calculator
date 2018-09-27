@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styles from './index.css'
+let classNames = require('classnames');
 
 class Screen extends Component {
     constructor(props){
@@ -8,7 +9,7 @@ class Screen extends Component {
 
     render() {
         return (
-            <textarea readOnly maxLength='15' className={styles.screen}/>
+            <textarea readOnly maxLength='15' className={classNames(styles.screen, "js-screen")}/>
         );
     }
 }
